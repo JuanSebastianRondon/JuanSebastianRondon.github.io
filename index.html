@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4A90E2;
+        }
+        button {
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #357ABD;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>¡Hola, Mundo!</h1>
+        <p>Esta es una página web simple creada con HTML y CSS.</p>
+        <button onclick="saludar()">Haz clic aquí</button>
+    </div>
+
+    <script>
+        function saludar() {
+            alert('¡Felicidades! Tu página funciona perfectamente.');
+        }
+    </script>
+
+</body>
+</html>
