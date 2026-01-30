@@ -1,0 +1,5 @@
+
+
+function saludo() {
+    muestras.html
+} 
