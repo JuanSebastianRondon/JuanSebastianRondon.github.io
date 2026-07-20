@@ -9,11 +9,11 @@
 
 <body>
 
-<div class="noise"></div>
+<div class="scanlines"></div>
 <div class="glow"></div>
 
 <nav>
-  <span class="nav-logo">jsr.dev</span>
+  <span class="nav-logo">jsr</span>
   <ul class="nav-links">
     <li><a href="#habilidades">habilidades</a></li>
     <li><a href="#proyectos">proyectos</a></li>
@@ -24,102 +24,139 @@
 <main>
 
   <section class="hero">
-    <div class="hero-tag fade-up">Tecnólogo en Análisis y Desarrollo de Software</div>
-    <h1 class="fade-up delay-1">Juan Sebastián<br><span>Rondón Garcés</span></h1>
-    <p class="hero-desc fade-up delay-2">
-      Desarrollo software funcional, desde aplicaciones de escritorio hasta sistemas backend. Me interesa construir herramientas que resuelvan problemas reales.
-    </p>
-    <div class="hero-links fade-up delay-3">
-      <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-      <a href="https://linkedin.com/in/juan-sebasti%C3%A1n-rond%C3%B3n-garc%C3%A9s-a432581a8" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
-      <a href="mailto:jrondongarces@gmail.com" class="btn btn-ghost">Contacto</a>
+    <div class="terminal fade-up">
+      <div class="terminal-head">
+        <div class="terminal-dot"></div>
+        <div class="terminal-dot"></div>
+        <div class="terminal-dot"></div>
+        <span class="terminal-title">jsr@portafolio: ~</span>
+      </div>
+      <div class="terminal-body">
+        <div class="line">
+          <span class="prompt">$</span>
+          <span class="cmd">whoami</span>
+        </div>
+        <h1>Juan Sebastián<br><span class="accent">Rondón Garcés</span><span class="cursor"></span></h1>
+        <div class="hero-role">Tecnólogo en Análisis y Desarrollo de Software</div>
+        <p class="hero-desc">
+          Desarrollo software funcional, desde aplicaciones de escritorio hasta sistemas backend. Me interesa construir herramientas que resuelvan problemas reales, sin florituras innecesarias.
+        </p>
+        <div class="hero-links">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="https://linkedin.com/in/juan-sebasti%C3%A1n-rond%C3%B3n-garc%C3%A9s-a432581a8" target="_blank" class="btn btn-ghost">LinkedIn ↗</a>
+          <a href="mailto:jrondongarces@gmail.com" class="btn btn-ghost">Contacto</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="habilidades">
-    <div class="section-label">Habilidades</div>
-    <div class="skills-grid">
+    <div class="section-label"><span class="prompt">$</span> <span class="cmd">cat</span> habilidades.json</div>
+    <div class="skills-grid fade-up">
       <div class="skill-item">
-        <div class="skill-dot dot-backend"></div>
+        <div class="skill-bracket">[srv]</div>
         <div class="skill-name">NestJS</div>
         <div class="skill-cat">Backend</div>
       </div>
       <div class="skill-item">
-        <div class="skill-dot dot-backend"></div>
+        <div class="skill-bracket">[srv]</div>
         <div class="skill-name">Node.js</div>
         <div class="skill-cat">Backend</div>
       </div>
       <div class="skill-item">
-        <div class="skill-dot dot-lang"></div>
+        <div class="skill-bracket">[lang]</div>
         <div class="skill-name">TypeScript</div>
         <div class="skill-cat">Lenguaje</div>
       </div>
       <div class="skill-item">
-        <div class="skill-dot dot-lang"></div>
+        <div class="skill-bracket">[lang]</div>
         <div class="skill-name">C#</div>
         <div class="skill-cat">Lenguaje</div>
       </div>
       <div class="skill-item">
-        <div class="skill-dot dot-lang"></div>
+        <div class="skill-bracket">[lang]</div>
         <div class="skill-name">C++</div>
         <div class="skill-cat">Lenguaje</div>
       </div>
       <div class="skill-item">
-        <div class="skill-dot dot-tools"></div>
+        <div class="skill-bracket">[eng]</div>
         <div class="skill-name">Unity</div>
         <div class="skill-cat">Motor de juegos</div>
       </div>
       <div class="skill-item">
-        <div class="skill-dot dot-tools"></div>
-        <div class="skill-name">pm2</div>
-        <div class="skill-cat">DevOps</div>
-      </div>
-      <div class="skill-item">
-        <div class="skill-dot dot-tools"></div>
+        <div class="skill-bracket">[ops]</div>
         <div class="skill-name">Git / GitHub</div>
         <div class="skill-cat">Control de versiones</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-bracket">[lang]</div>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-cat">Lenguaje</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-bracket">[web]</div>
+        <div class="skill-name">HTML</div>
+        <div class="skill-cat">Frontend</div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-bracket">[web]</div>
+        <div class="skill-name">CSS</div>
+        <div class="skill-cat">Frontend</div>
       </div>
     </div>
   </section>
 
   <section id="proyectos">
-    <div class="section-label">Proyectos</div>
-    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+    <div class="section-label"><span class="prompt">$</span> <span class="cmd">ls</span> proyectos/</div>
+    <div style="display: flex; flex-direction: column; gap: 1.25rem;">
 
-      <div class="project-card">
-        <div class="project-top">
-          <div class="project-icon">📊</div>
-          <div class="project-links">
-            <a href="https://github.com/JuanSebastianRondon/Reporte-Semanal" target="_blank">GitHub ↗</a>
+      <div class="project-card project-card--terminal fade-up">
+        <div class="project-terminal">
+          <div class="terminal-head">
+            <div class="terminal-dot"></div>
+            <div class="terminal-dot"></div>
+            <div class="terminal-dot"></div>
+            <span class="terminal-title">jsr@portafolio: ~/reporte-semanal</span>
           </div>
-        </div>
-        <div class="project-title">Reporte Semanal de Productividad</div>
-        <p class="project-desc">
-          Aplicación de escritorio para Windows que registra en segundo plano el tiempo de uso de cada programa durante la semana. Cada lunes genera y envía automáticamente un reporte en PDF al correo del usuario con las aplicaciones más utilizadas.
-        </p>
-        <div class="project-tags">
-          <span class="tag">NestJS</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">pdfkit</span>
-          <span class="tag">nodemailer</span>
-          <span class="tag">pm2</span>
-          <span class="tag">PowerShell</span>
-          <span class="tag">Inno Setup</span>
+          <div class="terminal-body">
+            <div class="project-top">
+              <div class="line">
+                <span class="prompt">$</span>
+                <span class="cmd">whoami</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/JuanSebastianRondon/Reporte-Semanal" target="_blank">GitHub ↗</a>
+              </div>
+            </div>
+            <h1>Reporte Semanal<br><span class="accent">de Productividad  </span><span class="cursor"></span></h1>
+            <p class="project-desc">
+              Aplicación de escritorio para Windows que registra en segundo plano el tiempo de uso de cada programa durante la semana. Cada lunes genera y envía automáticamente un reporte en PDF al correo del usuario con las aplicaciones más utilizadas.
+            </p>
+            <div class="project-tags">
+              <span class="tag">NestJS</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">pdfkit</span>
+              <span class="tag">nodemailer</span>
+              <span class="tag">PowerShell</span>
+              <span class="tag">Inno Setup</span>
+              <span class="tag">C#</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card fade-up">
         <div class="project-top">
-          <div class="project-icon">📱</div>
+          <div class="project-path">~/<span class="sep">/</span>rentwash <span class="project-badge">práctica académica</span></div>
           <div class="project-links">
             <a href="https://github.com/JuanSebastianRondon/RentWash" target="_blank">GitHub ↗</a>
           </div>
         </div>
-        <div class="project-title">RentWash <span style="font-size: 12px; font-family: var(--mono); color: var(--muted); font-weight: 400; margin-left: 0.5rem;">práctica académica</span></div>
+            <h1><span class="accent">RentWash</span><span class="cursor"></span></h1>
         <p class="project-desc">
           Sistema de gestión para el alquiler de lavadoras. Proyecto académico que abarca frontend en React, backend en Node.js y base de datos MySQL. Pendiente de mejoras y refinamiento.
         </p>
-        <img src="images/image.jpg" alt="Vista previa de RentWash" style="width: 100%; border-radius: 8px; border: 0.5px solid var(--border); margin-bottom: 1.25rem; display: block;">
+        <img src="images/image.jpg" alt="Vista previa de RentWash" class="project-preview">
         <div class="project-tags">
           <span class="tag">React.js</span>
           <span class="tag">Node.js</span>
@@ -128,14 +165,14 @@
         </div>
       </div>
 
-      <div class="project-card">
+      <div class="project-card fade-up">
         <div class="project-top">
-          <div class="project-icon">🌐</div>
+          <div class="project-path">~/<span class="sep">/</span>portafolio</div>
           <div class="project-links">
             <a href="https://github.com/JuanSebastianRondon/JuanSebastianRondon.github.io" target="_blank">GitHub ↗</a>
           </div>
         </div>
-        <div class="project-title">Este portafolio</div>
+        <h1><span class="accent">Este portafolio</span><span class="cursor"></span></h1>
         <p class="project-desc">
           Página personal desarrollada como sitio estático alojado en GitHub Pages. Diseño propio con HTML, CSS y JavaScript.
         </p>
@@ -151,8 +188,8 @@
   </section>
 
   <section id="contacto">
-    <div class="section-label">Contacto</div>
-    <div class="contact-grid">
+    <div class="section-label"><span class="prompt">$</span> <span class="cmd">cat</span> contacto.txt</div>
+    <div class="contact-grid fade-up">
       <a href="mailto:jrondongarces@gmail.com" class="contact-item">
         <span class="contact-label">email</span>
         <span class="contact-value">jrondongarces@gmail.com</span>
@@ -173,11 +210,22 @@
 
 </main>
 
-<script src="./index.js"></script>
+<div class="statusbar">
+  <div class="statusbar-proc">
+    <span class="statusbar-dot"></span>
+    reporte-semanal.exe — activo
+  </div>
+  <div class="statusbar-right">
+    <span>uptime: 2 años</span>
+    <span>build 2026.07</span>
+  </div>
+</div>
 
 <footer>
   <span>© 2026 Juan Sebastián Rondón Garcés</span>
 </footer>
+
+<script src="./index.js"></script>
 
 </body>
 </html>
