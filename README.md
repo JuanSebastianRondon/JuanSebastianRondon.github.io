@@ -1,37 +1,29 @@
 <div align="center">
 
-```
-$ whoami
-```
-
 # Portafolio personal
 ### Juan Sebastián Rondón Garcés
 
-Sitio web estático alojado en [GitHub Pages](https://pages.github.com/). Alojando una muestra de mis proyectos, habilidades y datos de contacto.
+Sitio estático en [GitHub Pages](https://pages.github.com/) con mis proyectos, habilidades y contacto.
 
 **[Ver sitio ↗](https://juansebastianrondon.github.io)**
 
 </div>
 
-<br>
+## Cómo está hecho
+
+HTML, CSS y JavaScript puros, sin frameworks ni build. El contenido vive en `data/projects.js` y las tarjetas se generan desde ahí. Para agregar un proyecto basta con añadir un objeto a ese archivo.
+
+## Estructura
 
 ```
-$ cat descripcion.txt
+index.html
+index.css
+data/projects.js    proyectos, habilidades y datos de contacto
+js/main.js          arranque
+js/render.js        genera tarjetas y habilidades
+js/reveal.js        IntersectionObserver: animaciones y nav activo
+js/clipboard.js     copiar al portapapeles con fallback
+images/             icon.png, og.png y capturas
+assets/cv.pdf       CV (agregar)
 ```
 
-Sin frameworks, sin build step. HTML, CSS y JS puros, servidos directo desde el repositorio. La estética sigue una identidad de terminal: Cursor parpadeante y una barra de estado fija que simula un proceso corriendo en segundo plano.
-
-<br>
-
-
-<br>
-
-```
-$ ls secciones/
-```
-
-- `habilidades` — stack técnico agrupado por categoría
-- `proyectos` — trabajos destacados con enlace directo al repositorio
-- `contacto` — correo, LinkedIn y GitHub
-
-<br>
